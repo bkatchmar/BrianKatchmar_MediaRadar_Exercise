@@ -54,8 +54,11 @@
     <% } else if (Model.ExerciseNumber == BJK_MR.Models.Containers.ExerciseNumber.EXERCISE_3) { %>
         <script type="text/javascript">
             jQuery(document).ready(function () {
-                var table = jQuery('table#example').DataTable();
-                table.order([3, "desc"],[2, "asc"]).draw()
+                var table = jQuery('table#example').DataTable({
+                    "aLengthMenu": [[5 -1], [5, "All"]],
+                    "iDisplayLength": 5
+                });
+                table.order([3, "desc"], [2, "asc"]).draw()
             });
         </script>
     <% } %>

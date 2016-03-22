@@ -23,6 +23,11 @@ namespace BJK_MR.Controllers
                 // A list of ads which appeared in the "Cover" position and also had at least 50% page coverage.
                 rtnVal.Ads = rtnVal.Ads.Where(x => x.Position == "Cover" && x.NumPages >= 0.5M).ToList();
             }
+            else if (rtnVal.ExerciseNumber == ExerciseNumber.EXERCISE_3)
+            {
+                // The top five ads by page coverage amount, distinct by brand (not sure what this means). Sort by page coverage amount (descending), then brand name alphabetically.
+                rtnVal.Ads = rtnVal.Ads.OrderByDescending(x => x.NumPages).ToList();
+            }
             else if (rtnVal.ExerciseNumber == ExerciseNumber.EXERCISE_4)
             {
                 // The top five brands by page coverage amount. Keep in mind that a single brand may run multiple ads. Also sorted by page coverage amount (descending), then brand name alphabetically.
