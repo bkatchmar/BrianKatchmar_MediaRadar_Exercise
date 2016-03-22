@@ -29,5 +29,12 @@ namespace BJK_MR.Models.Objects
             set { this.m_lastName = value; }
         }
         #endregion
+
+        #region Public Methods
+        public override string ToString()
+        {
+            return this.FirstName + " " + this.LastName;
+        }
+        #endregion
     }
 }
