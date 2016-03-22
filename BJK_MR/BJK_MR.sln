@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Web Developer Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BJK_MR", "BJK_MR\BJK_MR.csproj", "{E7EB4666-F5BF-4181-A008-039998C3961B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7EB4666-F5BF-4181-A008-039998C3961B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7EB4666-F5BF-4181-A008-039998C3961B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7EB4666-F5BF-4181-A008-039998C3961B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7EB4666-F5BF-4181-A008-039998C3961B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
